@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+}
+
+.background {
+    background-color:#0D192B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 20rem;
+    background-color: #14253D;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.10), 
+                16px 0px 24px 0px rgba(0, 0, 0, 0.10), 
+                -16px 0px 24px 0px rgba(0, 0, 0, 0.10);
+}
+
+.imgCard {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.imagemCard {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    position: absolute;
+}
+
+.visualizacao{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visualizacao:hover {
+    opacity: 1;
+    transition: .5s ease;
+    background-color: #00fff75a;
+}
+
+.titulo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.texto {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #8BACDA;
+    text-align: left;
+}
+
+.info, .infoI, .infoII{
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    justify-content: space-between;
+}
+
+.infoI {
+    color: #00FFF6;
+}
+
+.infoII {
+    justify-content: flex-end;
+    color: #8BACDA;
+}
+
+.infoI, .infoII {
+    gap: 0.5rem;
+}
+
+.divisao {
+    height: 0.07rem;
+    margin: 0.5rem 0;
+    background-color: #2F415B;
+}
+
+.dadosCriador {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+    border: solid 0.01rem #FFFFFF;
+    border-radius: 50%;
+}
+
+.criadorDescri{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.criadorDescri span {
+    color: #8BACDA;
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        width: 15rem;
+    }
+    
+    .imgCard {
+        width: 15rem;
+        height: 15rem;
+    }
+    
+    .imagemCard {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .visualizacao{
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 0.5rem;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo {
+        font-size: 1.1rem;
+    }
+    
+    .texto {
+        font-size: 0.9rem;
+    }
+    
+    .criadorDescri{
+        font-size: 0.9rem;
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+}
