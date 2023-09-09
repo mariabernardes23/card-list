@@ -9,6 +9,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem;
+  animation: bounceInUp;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
 .card {
@@ -26,6 +29,9 @@ body {
 .card:hover {
   box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.1),
     16px 0px 24px 0px rgba(0, 0, 0, 0.1), -16px 0px 24px 0px rgba(0, 0, 0, 0.1);
+    animation: pulse;
+    animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 .imgCard {
@@ -228,4 +234,13 @@ body {
     font-size: 0.9rem;
     font-weight: 300;
   }
+}
+
+
+.my-element{
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
 }
