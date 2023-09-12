@@ -1,5 +1,9 @@
 # Card-list
-O projeto Card-List marca uma evolução do meu projeto anterior, denominado [desafio](https://github.com/mariabernardes23/desafio.git). Nessa nova fase, utilizei os cards que desenvolvi anteriormente como ponto de partida para criar uma lista de cards mais refinada e atraente. Para conferir uma identidade exclusiva a cada um deles, recorri à assistência da IA Leonardo.ia, que gerou imagens exclusivas, e adicionei efeitos de animação aos cards. Além disso, fiz ajustes extras para que os cards tivessem características que refletissem minha identidade de forma marcante.
+<p align="justify">
+ O projeto Card-List marca uma evolução do meu projeto anterior, denominado <strong> <a href="https://github.com/mariabernardes23/card-list">desafio</a></strong>. Nessa nova fase, utilizei os cards que   
+ desenvolvi anteriormente como ponto de partida para criar uma lista de cards mais refinada e atraente. Para conferir uma identidade exclusiva a cada um deles, recorri à assistência da IA Leonardo.ia, que gerou 
+ imagens exclusivas, e adicionei efeitos de animação aos cards. Além disso, fiz ajustes extras para que os cards tivessem características que refletissem minha identidade de forma marcante.
+</p>
 
 ## 📸 Imagem do projeto
 
@@ -12,7 +16,7 @@ O projeto Card-List marca uma evolução do meu projeto anterior, denominado [de
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript)
 
 ## 🔗 Link de demonstração
-<a href=" https://mariabernardes23.github.io/card-list/">Card-list</a>
+<a href="https://mariabernardes23.github.io/card-list/">Card-list</a>
 
 ## 🎨 Documentação de cores
 
@@ -30,9 +34,9 @@ O projeto Card-List marca uma evolução do meu projeto anterior, denominado [de
 | Cor exemplo       | ![#14253d](https://via.placeholder.com/10/14253d?text=+) #14253d |
 
 
-### Autora
----
-<a href="www.linkedin.com/in/maria-eduarda-bernardes-lopes-0053a7231">
+# 🙋‍♀️ Autora
+
+<a href="https://www.linkedin.com/in/maria-eduarda-bernardes-lopes-0053a7231/">
  <img style="border-radius: 50"; src="https://media.licdn.com/dms/image/C4E03AQGEx_EWAGbBCg/profile-displayphoto-shrink_800_800/0/1649215146157?e=1700092800&v=beta&t=epilAhOL4FyGHmo1RMIWjNQV878dZdWyxe2NCLtYoAk" width="100px;" alt=""/>
 <br />
- <sub><b>Maria Duda Lopes</b></sub></a> <a href="www.linkedin.com/in/maria-eduarda-bernardes-lopes-0053a7231" title="star">✨</a>
+<sub><b>Maria Duda Lopes</b></sub></a> <a href="https://www.linkedin.com/in/maria-eduarda-bernardes-lopes-0053a7231/" title="star">✨</a>
