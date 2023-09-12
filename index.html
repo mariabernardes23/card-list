@@ -4,17 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav class="navBar">
+        <div class="logo">
+          <img src="img/watercolor-style-platypus.png" alt="" />
+        </div>
+        <div class="navList">
+          <ul class="filterLi">
+            <li class="active navItem" data-name="ShowAll">Show All</li>
+            <li class="navItem" data-name="2D">2D</li>
+            <li class="navItem" data-name="3D">3D</li>
+            <li class="navItem" data-name="watercolor">Watercolor</li>
+          </ul>
+        </div>
+
+        <div class="mobileMenuIcon">
+          <button id="buttonMenu">
+            <img class="icon" src="img/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobileMenu">
+        <ul class="filterLi">
+          <li class="active navItem" data-name="ShowAll">Show All</li>
+          <li class="navItem" data-name="2D">2D</li>
+          <li class="navItem" data-name="3D">3D</li>
+          <li class="navItem" data-name="watercolor">Watercolor</li>
+        </ul>
+      </div>
+    </header>
+
     <div class="cardList">
-      <div class="card">
+      <div class="card" data-name="3D">
         <div class="imgCard">
-          <img src="img/draw_Lucas.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/draw_Lucas.jpg"
+            alt="Lucas a smiling boy, holding his faithful friend, Bolt the dog"
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -22,22 +69,40 @@
           <div class="descricao">
             <h2 class="titulo">Draw Lucas</h2>
             <p class="texto">
-              Lucas um menino sorridente, segurando seu fiel amigo, Bolt, o cachorro, enquanto eles caminham juntos pela floresta.
+              Lucas um menino sorridente, segurando seu fiel amigo, Bolt, o
+              cachorro, enquanto eles caminham juntos pela floresta.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.041ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -46,18 +111,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/image-avatar.png" alt="" srcset="" class="avatar" />
+            <img
+              src="img/image-avatar.png"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Adinan85</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="3D">
         <div class="imgCard">
-          <img src="img/backpackBoy.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/backpackBoy.jpg"
+            alt="Boy with backpack with messy brown hair, astronaut outfit in super realistic space."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -65,22 +149,40 @@
           <div class="descricao">
             <h2 class="titulo">Backpack Boy</h2>
             <p class="texto">
-              Menino de mochila com cabelo castanho bagunçado, roupa de astronauta no espaço super realista.
+              Menino de mochila com cabelo castanho bagunçado, roupa de
+              astronauta no espaço super realista.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.053ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -89,18 +191,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/image-avatar.png" alt="" srcset="" class="avatar" />
+            <img
+              src="img/image-avatar.png"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Luizwagner</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="3D">
         <div class="imgCard">
-          <img src="img/circus.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/circus.jpg"
+            alt="The magical circus full of fun and excitement, in the center a ring illuminated by spotlights."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -108,22 +229,40 @@
           <div class="descricao">
             <h2 class="titulo">Sob a Lona do Circo</h2>
             <p class="texto">
-              O circo é um lugar mágico cheio de diversão e emoção, no centro um picadeiro iluminado por holofotes. 
+              O circo é um lugar mágico cheio de diversão e emoção, no centro um
+              picadeiro iluminado por holofotes.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.029ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -132,18 +271,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/artista.jpeg" alt="" srcset="" class="avatar" />
+            <img
+              src="img/artista.jpeg"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Maria Duda</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="2D">
         <div class="imgCard">
-          <img src="img/rabbits.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/rabbits.jpg"
+            alt="A detailed illustration of a vintage birthday party print featuring 3 bunnies."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -151,22 +309,40 @@
           <div class="descricao">
             <h2 class="titulo">Birthday Party with Rabbits</h2>
             <p class="texto">
-              Uma ilustração detalhada de uma impressão de uma festa de aniversário vintage com 3 coelhos.
+              Uma ilustração detalhada de uma impressão de uma festa de
+              aniversário vintage com 3 coelhos.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.030ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -175,18 +351,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/image-avatar.png" alt="" srcset="" class="avatar" />
+            <img
+              src="img/image-avatar.png"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Atelier</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="3D">
         <div class="imgCard">
-          <img src="img/evil_wizard.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/evil_wizard.jpg"
+            alt="Wizard with a dark cloak and a staff in his hand, in the forest with light effect, the lighting is soft."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -194,22 +389,40 @@
           <div class="descricao">
             <h2 class="titulo">Evil Wizard</h2>
             <p class="texto">
-              Mago com capa escura e um cajado na mão, na floresta com efeito de luz, a iluminação é suave.
+              Mago com capa escura e um cajado na mão, na floresta com efeito de
+              luz, a iluminação é suave.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.048ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -218,18 +431,39 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/image-avatar.png" alt="" srcset="" class="avatar" />
-            <p class="criadorDescri"><span>Credention of</span> Fasrt1254desgr</p>
+            <img
+              src="img/image-avatar.png"
+              alt=""
+              srcset="artist photo"
+              class="avatar"
+            />
+            <p class="criadorDescri">
+              <span>Credention of</span> Fasrt1254desgr
+            </p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="2D">
         <div class="imgCard">
-          <img src="img/absurd_and_hilarious_race.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/absurd_and_hilarious_race.jpg"
+            alt="Absurd and hilarious race between cartoonish characters in crazy and unusual vehicles."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -237,22 +471,40 @@
           <div class="descricao">
             <h2 class="titulo">A Corrida Maluca</h2>
             <p class="texto">
-              Corrida absurda e hilária entre personagens caricatos em veículos malucos e inusitados.
+              Corrida absurda e hilária entre personagens caricatos em veículos
+              malucos e inusitados.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.010ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -261,18 +513,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/artista.jpeg" alt="" srcset="" class="avatar" />
+            <img
+              src="img/artista.jpeg"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Maria Duda</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="watercolor">
         <div class="imgCard">
-          <img src="img/red-biplane.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/red-biplane.jpg"
+            alt=""
+            srcset="3 trees in front of watercolor style green mountains and a red biplane."
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -280,22 +551,40 @@
           <div class="descricao">
             <h2 class="titulo">Red Biplane</h2>
             <p class="texto">
-              3 árvores em frente a montanhas verdes em estilo aquarela e um biplano vermelho.
+              3 árvores em frente a montanhas verdes em estilo aquarela e um
+              biplano vermelho.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.080ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -304,18 +593,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/image-avatar.png" alt="" srcset="" class="avatar" />
+            <img
+              src="img/image-avatar.png"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Zsu_art67</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="3D">
         <div class="imgCard">
-          <img src="img/draw_Nuna.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/draw_Nuna.jpg"
+            alt="Nuna is a friendly, smiling bee who holds her small basket and flies from the hive to the flowers."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -323,22 +631,40 @@
           <div class="descricao">
             <h2 class="titulo">Draw Nuna</h2>
             <p class="texto">
-              Nuna uma abelha simpática e sorridente que segura sua pequena cesta e voa da colmeia até as flores.
+              Nuna uma abelha simpática e sorridente que segura sua pequena
+              cesta e voa da colmeia até as flores.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.058ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -347,18 +673,37 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/image-avatar.png" alt="" srcset="" class="avatar" />
+            <img
+              src="img/image-avatar.png"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Wiwa</p>
           </div>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-name="watercolor">
         <div class="imgCard">
-          <img src="img/watercolor_beach.jpg" alt="" srcset=""class="imagemCard" />
+          <img
+            src="img/watercolor_beach.jpg"
+            alt="Watercolor style drawing, beach landscape with team and umbrella."
+            srcset=""
+            class="imagemCard"
+          />
           <div class="visualizacao">
-            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="30" viewBox="0 0 44 30" fill="none">
-              <path d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z" fill="white"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="44"
+              height="30"
+              viewBox="0 0 44 30"
+              fill="none"
+            >
+              <path
+                d="M22 0C12 0 3.46 6.22 0 15C3.46 23.78 12 30 22 30C32.01 30 40.54 23.78 44 15C40.54 6.22 32.01 0 22 0ZM22 25C16.48 25 12 20.52 12 15C12 9.48 16.48 5 22 5C27.52 5 32 9.48 32 15C32 20.52 27.52 25 22 25ZM22 9C18.69 9 16 11.69 16 15C16 18.31 18.69 21 22 21C25.31 21 28 18.31 28 15C28 11.69 25.31 9 22 9Z"
+                fill="white"
+              />
             </svg>
           </div>
         </div>
@@ -366,22 +711,40 @@
           <div class="descricao">
             <h2 class="titulo">Watercolor Beach</h2>
             <p class="texto">
-              Desenho estilo aquarela, paisagem de praia com equipe e guarda-chuva.
+              Desenho estilo aquarela, paisagem de praia com equipe e
+              guarda-chuva.
             </p>
           </div>
           <div class="info">
             <div class="infoI">
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19" fill="none" >
-                <path d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
-                  fill="#00FFF8" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="19"
+                viewBox="0 0 11 19"
+                fill="none"
+              >
+                <path
+                  d="M11 10.716L5.5 18.5L0 10.716L5.5 13.979L11 10.717V10.716ZM5.5 0.5L10.996 9.669L5.5 12.93L0 9.67L5.5 0.5Z"
+                  fill="#00FFF8"
+                />
               </svg>
               <p>0.065ETH</p>
             </div>
             <div class="infoII">
               <button class="buttonLike">
                 <div class="label">
-                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z" fill="black" />
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 5.25C5.61914 5.25 3.25 7.3293 3.25 10.0298C3.25 11.8927 4.12235 13.4612 5.27849 14.7604C6.43066 16.0552 7.91714 17.142 9.26097 18.0516L11.5796 19.6211C11.8335 19.793 12.1665 19.793 12.4204 19.6211L14.739 18.0516C16.0829 17.142 17.5693 16.0552 18.7215 14.7604C19.8777 13.4612 20.75 11.8927 20.75 10.0298C20.75 7.3293 18.3809 5.25 15.6 5.25C14.1665 5.25 12.9052 5.92214 12 6.79183C11.0948 5.92214 9.83347 5.25 8.4 5.25Z"
+                      fill="black"
+                    />
                   </svg>
                 </div>
                 <div class="numberLike">0</div>
@@ -390,7 +753,12 @@
           </div>
           <div class="divisao"></div>
           <div class="dadosCriador">
-            <img src="img/artista.jpeg" alt="" srcset="" class="avatar" />
+            <img
+              src="img/artista.jpeg"
+              alt="artist photo"
+              srcset=""
+              class="avatar"
+            />
             <p class="criadorDescri"><span>Credention of</span> Maria Duda</p>
           </div>
         </div>

@@ -3,6 +3,63 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+header {
+  background-color: #0d192b;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 5rem;
+  height: 6rem;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+}
+
+.navList ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navItem {
+  margin: 0 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navItem.active {
+  color: #00fff6;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.mobileMenu {
+  display: none;
+}
+
 .cardList {
   display: flex;
   justify-content: center;
@@ -26,12 +83,16 @@ body {
   align-items: center;
 }
 
+.card.hide {
+  display: none;
+}
+
 .card:hover {
   box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.1),
     16px 0px 24px 0px rgba(0, 0, 0, 0.1), -16px 0px 24px 0px rgba(0, 0, 0, 0.1);
-    animation: pulse;
-    animation-duration: 2s;
-    animation-delay: 1s;
+  animation: pulse;
+  animation-duration: 2s;
+  animation-delay: 1s;
 }
 
 .imgCard {
@@ -66,7 +127,7 @@ body {
   background-color: #00fff75a;
 }
 
-.descricaoCard{
+.descricaoCard {
   width: 20rem;
 }
 
@@ -83,7 +144,9 @@ body {
   text-align: justify;
 }
 
-.info, .infoI, .infoII {
+.info,
+.infoI,
+.infoII {
   display: flex;
   align-items: center;
 }
@@ -94,7 +157,7 @@ body {
 
 .infoI {
   font-size: 1rem;
-   color: #00fff6;
+  color: #00fff6;
 }
 
 .infoII {
@@ -102,7 +165,8 @@ body {
   color: #8bacda;
 }
 
-.infoI, .infoII {
+.infoI,
+.infoII {
   gap: 0.5rem;
 }
 
@@ -132,15 +196,15 @@ body {
 }
 
 .numberLike {
-    color: #8a8d9b;
+  color: #8a8d9b;
 }
 
 .infoII button:hover path {
-  fill: #EF233C;
+  fill: #ef233c;
 }
 
 .infoII button.like .numberLike {
-  color: #EF233C;
+  color: #ef233c;
 }
 
 .infoII button.like svg {
@@ -148,7 +212,7 @@ body {
 }
 
 .infoII button.like path {
-  fill: #EF233C;
+  fill: #ef233c;
 }
 
 .divisao {
@@ -193,6 +257,55 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navItem {
+    display: none;
+    margin: 0;
+    padding: 0.5rem 2rem;
+  }
+
+  .navItem:hover {
+    background-color: #14253d;
+  }
+
+  .mobileMenuIcon {
+    display: flex;
+  }
+
+  #buttonMenu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobileMenu {
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .mobileMenu ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #0d192b;
+  }
+
+  .mobileMenu .navItem {
+    display: flex;
+  }
+
+  .open {
+    display: flex;
+    justify-content: flex-end;
+    border-color: transparent;
+  }
+
+  .cardList {
+    padding: 0.5rem;
+  }
+
   .card {
     width: 15rem;
   }
@@ -218,7 +331,7 @@ body {
     align-items: center;
   }
 
-  .descricaoCard{
+  .descricaoCard {
     width: 15rem;
   }
 
@@ -234,13 +347,4 @@ body {
     font-size: 0.9rem;
     font-weight: 300;
   }
-}
-
-
-.my-element{
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
 }
